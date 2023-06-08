@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "exo";
-    src: url(/assets/fonts/Exo2-Regular.ttf);
+    src: url(./assets/fonts/Exo2-Regular.ttf);
 }
 
 /* Header */
@@ -39,7 +39,7 @@
 
 /* Banner */
 .banner{
-    background-image: url(/assets/img/background.jpg);
+    background-image: url(./assets/img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -116,25 +116,25 @@ span {
 }
 
 .img-video1{
-    background-image: url(/assets/img/team-latam.png);
+    background-image: url(./assets/img/team-latam.png);
     width: 200px;
     height: 200px;
     margin: 30px;
 }
 .img-video2{
-    background-image: url(/assets/img/travel-meets-fashion.png);
+    background-image: url(./assets/img/travel-meets-fashion.png);
     width: 200px;
     height: 200px;
     margin: 30px;
 }
 .img-video3{
-    background-image: url(/assets/img/velocidad-riesgo.png);
+    background-image: url(./assets/img/velocidad-riesgo.png);
     width: 200px;
     height: 200px;
     margin: 30px;
 }
 .img-video4{
-    background-image: url(/assets/img/experiencia.png);
+    background-image: url(./assets/img/experiencia.png);
     width: 200px;
     height: 200px;
     margin: 30px;
