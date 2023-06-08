@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    /* background-color: #000; */
+}
+
+@font-face {
+    font-family: "exo";
+    src: url(/assets/fonts/Exo2-Regular.ttf);
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-bottom: 3px solid red;
+}
+
+.content-header {
+    width: 80%;
+}
+
+.content-header ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px){
+    .content-header {
+        width: 95%;
+    }
+    .content-header ul li img {
+        width: 70%;
+    }
+}
+
+/* Banner */
+.banner{
+    background-image: url(/assets/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-column1 {
+    margin-top: 15vh;
+    text-align: center;
+    color: #fff;
+    font-family: "exo";
+}
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "exo";
+    font-size: 20px;
+    margin-top: 30px;
+}
+.countdown-element{
+    min-width: 50px;
+    padding: 16px 24px;
+    border: 3px solid;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 20px;
+}
+.label {
+    font-family: "exo";
+    font-size: 12px;
+    margin-top: 5px;
+}
+span {
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+}
+.videos{
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 600px){
+    span {
+        font-size: 25px;
+    }
+    .countdown-element{
+        min-width: 50px;
+        padding: 8px ;
+        margin: 0 6px;
+    }
+    .videos iframe{
+        width: 100%;
+    }
+}
+
+/* seleccion de video */
+.select{
+    background: #000;
+    padding: 48px 0;
+}
+.select-videos{
+    display: flex;
+    justify-content: center;
+}
+.select-title{
+    text-align: center;
+    font-family: "exo";
+    font-size: 24px;
+    color: #fff;
+}
+
+.img-video1{
+    background-image: url(/assets/img/team-latam.png);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.img-video2{
+    background-image: url(/assets/img/travel-meets-fashion.png);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.img-video3{
+    background-image: url(/assets/img/velocidad-riesgo.png);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.img-video4{
+    background-image: url(/assets/img/experiencia.png);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.info-video{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    opacity: 0;
+    font-family: "exo";
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.title-video{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    font-family: "exo";
+    color: #fff;
+}
+.video:hover .info-video{
+    opacity: 1;
+}
+
+#video1{
+    display: block;
+}
+#video2{
+    display: none;
+}
+#video3{
+    display: none;
+}
+#video4{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .select-videos{
+        flex-wrap: wrap;
+    }
+    .video{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .select-title{
+        font-size: 20px;
+    }
+    .img-video1{
+        margin: 0px;
+    }
+    .img-video2{
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+    }
+    .img-video3{
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+    }
+    .img-video4{
+        width: 200px;
+        height: 200px;
+        margin: 0px;
+    }
+    .info-video{
+        width: 175px;
+        height: 175px;
+    }
+    .title-video{
+        text-align: center;
+        width: 190px;
+    }
+}
+
+/* Footer */
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-footer{
+    width: 80%;
+}
+.content-footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'exo';
+    font-size: 14px;
+}
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sociales li{
+    margin: 0 12px;
+}
+.sociales li i{
+    text-align: center;
+    padding: 6px;
+    min-width: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.fa-instagram{
+    background: rgb(221, 42, 123);;
+}
+.fa-twitter{
+    background: #00acee;
+}
+.fa-facebook-f{
+    background: #3b5998;
+}
+.fa-youtube{
+    background: #c4302b;
+}
+
+@media only screen and (max-width: 600px){
+    .footer{
+        padding: 24px 0;
+    }
+    .content-footer{
+        width: 100%;
+    }
+    .content-footer ul{
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .sociales{
+        margin-top: 10px;
+    }
+}
